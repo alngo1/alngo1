@@ -145,12 +145,17 @@ section{
 	}
 
 	.title{
-		font-size: 2rem;
-		padding: 15rem 0rem 3rem 0rem;
+		font-size: 1.3rem;
+		padding: 15rem 0rem 5rem 0rem;
 	}
 	.links a{
 		padding: 1rem;
 		font-size: 0.7rem;
+	}
+
+	.monkey-gif img{
+		width: 30rem;
+		height: auto;
 	}
 
 
@@ -180,9 +185,10 @@ section{
 
 	.newsletter-button p{
 		text-align: center;
-		padding: 6rem 0rem;
-		font-size: 2rem;
+		padding: 8rem 0rem;
+		font-size: 1rem;
 		color: black;
+		line-height: 1.5rem;
 	}
 
 }
