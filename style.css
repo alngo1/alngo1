@@ -47,6 +47,20 @@ section{
 	background: linear-gradient(mediumpurple, 90%, aqua);
 }
 
+.socials{
+	position: absolute;
+	top: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+.socials img{
+	width: 10%;
+	height: auto;
+}
+
 .links{
 	display: flex;
 	justify-content: flex-end;
@@ -82,7 +96,12 @@ section{
 
 /* GAME GALLERY */
 #game-gallery{
-	background: white;
+	background: #320d6d;
+}
+
+.game-gallery video{
+	width: 50%;
+	height: auto;
 }
 
 #game-gallery h2{
@@ -96,7 +115,7 @@ section{
 	width: 60rem;
 	height: 28rem;
 	z-index: 2;
-	background-color: aquamarine;
+	background-color: #c589e8;
 }
 
 .game-info{
@@ -105,7 +124,7 @@ section{
 	left: 40%;
 	width: 60rem;
 	height: 28rem;
-	background-color: mediumvioletred;
+	background-color: #44ccff;
 	text-align: right;
 }
 
@@ -143,8 +162,16 @@ section{
 }
 
 /* CARD SECTION */
+.test-cards{
+	position:relative;
+	top: 10px;
+	font-size: 1.5rem;
+	text-align: center;
+	width: 100vw;
+}
+
 .card-section{
-	background-color: tan;
+	background-color: #FFFAFB;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -171,7 +198,7 @@ section{
 .card h1{
 	position: relative;
 	text-align: center;
-	background: rgba(4, 89, 48, 1);
+	/* background: #191308; */
 	color: #fff;
 	visibility: hidden;
 	opacity: 0;
@@ -205,6 +232,10 @@ section{
 		overflow-x: hidden;
 	}
 
+	.socials{
+		display: none;
+	}
+
 	.title{
 		font-size: 1.3rem;
 		padding: 15rem 0rem 5rem 0rem;
@@ -225,17 +256,30 @@ section{
 		width: 100%;
 		height: 15rem;
 		z-index: 2;
-		background-color: aquamarine;
 	}
 	
 	.game-info{
 		position: static;
 		width: 100%;
 		height: 15rem;
-		background-color: mediumvioletred;
 		text-align: right;
 	}
 
+	.card-section{
+		/* flex-direction: column; */
+		flex-wrap: wrap;
+		/* align-items: flex-start; */
+	}
+
+	.card{
+		width: 40vw;
+		height: 40vw;
+		border-radius: 0;
+	}
+
+	.card-section h1{
+		font-size: 0.7rem;
+	}
 
 	.newsletter-button{
 		width: 75%;

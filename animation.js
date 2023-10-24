@@ -2,17 +2,17 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 //making gltf loader
-// const loader = new GLTFLoader();
+const loader = new GLTFLoader();
 
-// loader.load( 'path/to/model.glb', function ( gltf ) {
+loader.load( '/concerto/scene.gltf', function ( gltf ) {
 
-// 	scene.add( gltf.scene );
+	scene.add( gltf.scene );
 
-// }, undefined, function ( error ) {
+}, undefined, function ( error ) {
 
-// 	console.error( error );
+	console.error( error );
 
-// } );
+} );
 
 // grab canvas from tag
 let canvas = document.querySelector("#c");
@@ -28,7 +28,8 @@ const far = 5;
 const camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
 
 //move camera away from orgin on z axis
-camera.position.z = 2;
+camera.position.z = 5;
+
 
 //create a scene
 const scene = new THREE.Scene();
@@ -46,7 +47,7 @@ const material = new THREE.MeshPhongMaterial({color: 0x44aa88});
 const cube = new THREE.Mesh(geometry, material);
 
 //add the shape to the scene
-scene.add(cube);
+// scene.add(cube);
 
 //rerender the page using reqAnimFrame
 function render(time) {
@@ -65,8 +66,11 @@ function render(time) {
 	}
 
 	//moving our cube
-	cube.rotation.x = time;
-	cube.rotation.y = time;
+	// cube.rotation.x = time;
+	// cube.rotation.y = time;
+
+	//move the camera
+	camera.rotateY(0.001);
 
 	//render our scene and camera w our renderer
 	renderer.render(scene, camera);
