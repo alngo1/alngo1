@@ -85,13 +85,13 @@ section{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: black;
+	background-color: white;
 }
 
 .insta .camera-border{
 	width: 75%;
 	height: 75%;
-	border: 0.25rem white solid;
+	border: 0.25rem black solid;
 	border-radius: 0.4rem;
 	display: flex;
 	justify-content: center;
@@ -100,7 +100,7 @@ section{
 .insta .camera-lens{
 	width: 40%;
 	height: 40%;
-	border: 0.20rem white solid;
+	border: 0.25rem black solid;
 	border-radius: 10rem;
 }
 .insta .camera-flash{
@@ -109,9 +109,9 @@ section{
 	left: 120%;
 	width: 10%;
 	height: 10%;
-	border: 0.120rem white solid;
+	border: 0.120rem black solid;
 	border-radius: 4rem;
-	background-color: white;
+	background-color: black;
 }
 
 
@@ -183,7 +183,7 @@ section{
 }
 
 .newsletter-button{
-	width: 100rem;
+	width: 90vw;
 	height: 25rem;
 	background-color: aqua;
 	transition: 0.4s ease;
@@ -210,7 +210,7 @@ section{
 #game-gallery h2{
 	text-align: center;
 	padding: 8rem 5rem;
-	font-size: 5rem;
+	font-size: 3rem;
 }
 
 .image-info-container{
