@@ -19,7 +19,9 @@ body {
 	scrollbar-width: none;  /* Firefox */
 	overflow-x: hidden;
 
-	font-family: 'Press Start 2p', Courier, monospace;
+	/* font-family: 'Yuji Syuku', Courier, monospace; */
+	font-family: 'Yuji Boku', Courier, monospace;
+	/* font-family: 'BIZ UDMincho', Courier, monospace; */
 	font-size: 1rem;
 }
 
@@ -44,12 +46,21 @@ section{
 
 /* MAIN PAGE */
 #home{
-	background: linear-gradient(mediumpurple, 90%, aqua);
+	/* background: linear-gradient(mediumpurple, 90%, aqua); */
+	background: black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
+.home-background{
+	/* height: 300%; */
+	
+	position: absolute;
+	rotate: 90deg;
+	bottom: 10px;
+	
+}
 
 
 /* LINKS AND SOCIALS */
@@ -60,6 +71,7 @@ section{
 }
 
 .link-text{
+	font-size: 2rem;
 	padding: 2rem;
 	transition: all 0.2s ease;
 }
@@ -76,9 +88,11 @@ section{
 	border-radius: 0.4rem;
 	margin: 1rem;
 	transition: 0.5s ease;
+	font-family: 'Press Start 2p', Courier, monospace;
+	border: 2px white solid;
 }
 .socials-icon:hover{
-	transform: translateY(10px);
+	transform: translateY(-10px);
 }
 
 .insta{
@@ -154,13 +168,22 @@ section{
 
 
 .title{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 4rem;
-	color: lightblue;
-	padding: 10rem 0rem 0rem 0rem;
-	/* border: 2px solid black; */
+	text-align: center;
+	line-height: 1.5;
+	/* color: lightblue; */
+	color: white;
+	padding: 9rem 0 0 0;
+}
+
+.title h1{
+	font-size: 10rem;
+	font-weight:bold;
+	letter-spacing: 3rem;
+}
+
+.title h2{
+	font-size: 2rem;
+
 }
 
 .monkey-gif{
@@ -204,7 +227,8 @@ section{
 
 /* GAME GALLERY */
 #game-gallery{
-	background: #320d6d;
+	/* background: #320d6d; */
+	background: white;
 }
 
 #game-gallery h2{
@@ -222,7 +246,8 @@ section{
 .image{
 	width: 100%;
 	z-index: 2;
-	background-color: #c589e8;
+	/* background-color: #c589e8; */
+	background-color: black;
 	display: flex;
 	justify-content: center;
 }
@@ -246,7 +271,6 @@ section{
 .game-info p{
 	padding: 2rem;
 	font-size: 1rem;
-	font-family:'Pixelify Sans', Courier, monospace;
 }
 
 
@@ -417,7 +441,6 @@ section{
 	.game-info p, .image p{
 		padding: 2rem;
 		font-size: 1.5rem;
-		font-family:'Pixelify Sans', Courier, monospace;
 	}
 
 }
@@ -507,7 +530,6 @@ section{
 	.game-info p, .image p{
 		padding: 2rem;
 		font-size: 1rem;
-		font-family:'Pixelify Sans', Courier, monospace;
 	}
 /* CARDS */
 
@@ -608,7 +630,6 @@ section{
 	.game-info p, .image p{
 		padding: 2rem;
 		font-size: 1rem;
-		font-family:'Pixelify Sans', Courier, monospace;
 	}
 
 /* CARDS */
@@ -717,7 +738,6 @@ section{
 	}
 	.game-info p, .image p{
 		font-size: 0.7rem;
-		font-family:'Pixelify Sans', Courier, monospace;
 	}
 
 	
@@ -817,7 +837,6 @@ section{
 	}
 	.game-info p, .image p{
 		font-size: 0.7rem;
-		font-family:'Pixelify Sans', Courier, monospace;
 	}
 
 	
