@@ -22,7 +22,7 @@ body {
 	/* font-family: 'Yuji Syuku', Courier, monospace; */
 	font-family: 'Yuji Boku', Courier, monospace;
 	/* font-family: 'BIZ UDMincho', Courier, monospace; */
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 a{
@@ -64,10 +64,11 @@ section{
 
 
 /* LINKS AND SOCIALS */
-.links{
+.nav-links{
+	width: 100vw;
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .link-text{
@@ -77,6 +78,16 @@ section{
 }
 .link-text:hover{
 	background-color: blue;
+}
+
+.socials{
+	position: fixed;
+	width: 100vw;
+	top: 93vh;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	z-index: 100;
 }
 
 .socials-icon{
@@ -89,6 +100,7 @@ section{
 	margin: 1rem;
 	transition: 0.5s ease;
 	font-family: 'Press Start 2p', Courier, monospace;
+	font-size: 1rem;
 	border: 2px white solid;
 }
 .socials-icon:hover{
@@ -172,7 +184,7 @@ section{
 	line-height: 1.5;
 	/* color: lightblue; */
 	color: white;
-	padding: 9rem 0 0 0;
+	padding: 6rem 0 0 0;
 }
 
 .title h1{
@@ -220,7 +232,7 @@ section{
 .newsletter-button p{
 	text-align: center;
 	padding: 12rem 0rem;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	color: black;
 }
 
@@ -270,7 +282,7 @@ section{
 
 .game-info p{
 	padding: 2rem;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 
