@@ -4,7 +4,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 //making gltf loader
 const loader = new GLTFLoader();
 
-loader.load( '/concerto/scene.gltf', function ( gltf ) {
+loader.load( './concerto/scene.gltf', function ( gltf ) {
 
 	scene.add( gltf.scene );
 
