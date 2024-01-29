@@ -47,20 +47,30 @@ section{
 /* MAIN PAGE */
 #home{
 	/* background: linear-gradient(mediumpurple, 90%, aqua); */
-	background: black;
+	position: relative;
+	/* background: black; */
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.home-background{
-	/* height: 300%; */
-	
-	position: absolute;
-	rotate: 90deg;
-	bottom: 10px;
-	
+#home-background{
+	min-width: 100%;
+	min-height: 100%;
+	object-fit: cover;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
 }
+
+.home-text{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 1;
+}
+
 
 
 /* LINKS AND SOCIALS */
