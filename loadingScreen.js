@@ -1,5 +1,8 @@
-let loading = document.querySelector(".loading");
+export function loading(){
+	let loading = document.querySelector(".loading");
 
-window.addEventListener("load", () =>{
-	loading.style.display = "none";
-})
+	window.addEventListener("load", () =>{
+		loading.style.display = "none";
+	})
+}
+

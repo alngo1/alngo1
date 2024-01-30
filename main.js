@@ -1,5 +1,10 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { loading } from './loadingScreen';
+import { scroll } from './scroll';
+
+loading();
+scroll();
 
 //making gltf loader
 const loader = new GLTFLoader();
