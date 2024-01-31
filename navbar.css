@@ -1,12 +1,33 @@
 /* NAV BARS LINKS AND SOCIALS */
 .navbars{
 	position: absolute;
+    z-index: 3;
 }
+
+.top-nav{
+    display: flex;
+}
+
+.nav-title{
+    position: fixed;
+    font-weight:bold;
+	letter-spacing: 1rem;
+	color: white;
+    font-size: 2rem;
+	padding: 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+	transition: all 0.2s ease-in 0.5s;
+    z-index: 5;
+}
+
 .nav-links{
+    position: fixed;
 	width: 100vw;
 	display: flex;
 	justify-content: flex-end;
 	align-items: flex-start;
+    background-color: hsla(222, 63%, 55%, 0.644);
 }
 
 .link-text{
@@ -26,6 +47,7 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	z-index: 100;
+    background-color: hsla(222, 63%, 55%, 0.644);
 }
 
 .socials-icon{

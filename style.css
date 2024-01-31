@@ -35,7 +35,7 @@ a{
 	height: 100vh;
 	background: blue;
 	position: fixed;
-	z-index: 100;
+	z-index: 4;
 }
 
 section{
@@ -93,7 +93,6 @@ section{
 	font-size: 10rem;
 	font-weight:bold;
 	letter-spacing: 3rem;
-	transition: all 2s;
 }
 
 .title h2{
@@ -116,6 +115,10 @@ section{
 	width: 50%;
 	height: 50%;
 	/* border: 2px solid black; */
+}
+
+.title h1, .monkey-gif img{
+	transition: all 0.5s ease-in-out;
 }
 
 
