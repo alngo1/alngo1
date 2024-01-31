@@ -35,7 +35,7 @@ a{
 	height: 100vh;
 	background: blue;
 	position: fixed;
-	z-index: 4;
+	z-index: 6;
 }
 
 section{
@@ -54,7 +54,6 @@ section{
 /* HOME PAGE */
 #home{
 	/* background: linear-gradient(mediumpurple, 90%, aqua); */
-	position: relative;
 	/* background: black; */
 	display: flex;
 	flex-direction: column;
@@ -83,7 +82,7 @@ section{
 	line-height: 1.5;
 	/* color: lightblue; */
 	color: white;
-	padding: 6rem 0 0 0;
+	padding: 20rem 0;
 }
 
 .title h1{
@@ -93,11 +92,12 @@ section{
 	font-size: 10rem;
 	font-weight:bold;
 	letter-spacing: 3rem;
+	
+	transition: all 0.7s ease 0.2s;
 }
 
 .title h2{
 	font-size: 2rem;
-
 }
 
 .monkey-gif{
@@ -107,19 +107,16 @@ section{
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .monkey-gif img{
-	
 	width: 50%;
 	height: 50%;
+	transition: all 0.7s ease;
 	/* border: 2px solid black; */
 }
 
-.title h1, .monkey-gif img{
-	transition: all 0.5s ease-in-out;
-}
 
 
 /* NEWSLETTER */
@@ -170,7 +167,7 @@ section{
 
 .image{
 	width: 100%;
-	z-index: 2;
+	z-index: 1;
 	/* background-color: #c589e8; */
 	background-color: black;
 	display: flex;
